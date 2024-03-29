@@ -1,0 +1,11 @@
+    Python 3.x: The chatbot is developed using Python programming language. Make sure you have Python 3.x installed on your system.
+    Spoonacular API: The chatbot integrates with the Spoonacular API for recipe data retrieval. You will need to sign up for an API key here.
+    Libraries:
+        requests: This library is used to make HTTP requests to the Spoonacular API for fetching recipe data.
+        bcrypt: Used for hashing user passwords for secure authentication.
+        colorama: Provides ANSI escape character sequences for styling terminal output with colors.
+        getpass: Enables hiding user input, such as passwords, in the terminal.
+        json: Used for parsing JSON responses from the Spoonacular API.
+        random: Utilized for selecting random recipes from the available categories.
+        sys: Provides access to system-specific parameters and functions.
+        time: Used for adding delays to the terminal output for better user experience.
