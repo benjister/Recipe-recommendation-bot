@@ -34,15 +34,17 @@ Dependencies
     Flask==2.0.2
     requests==2.26.0
     beautifulsoup4==4.10.0
-    (Add any other dependencies specific to your application)
+
 
 Usage
 
-    Choose a category from the list (pasta, soup, salad, dessert, breakfast).
-    Click on the "Get Recommendation" button.
+    Choose any category of your choice
+    Click on the "Get Recipes" button.
+    choose one of the recipes listed based on your catagory of choice.
     View the recommended recipe along with its instructions.
 
 Screenshots
+![Screenshot_2024-03-30_10_21_12-fotor-20240330103645](https://github.com/benjister/Recipe-recommendation-bot/assets/122888104/c1bcb42a-d64e-48e6-a604-b88ae06db422)
 
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
