@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommendation Bot</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="chat-bot">
+                    <div class="chat-message">
+                        <p class="bot-text">Welcome to Recipe Recommendation Bot!</p>
+                    </div>
+                    <div class="chat-message">
+                        <p class="bot-text">I can recommend recipes based on your preferences. Just type a category below:</p>
+                    </div>
+                    <form action="/recommendation" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="category" placeholder="Type a category...">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Get Recipes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

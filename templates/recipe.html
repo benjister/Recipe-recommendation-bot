@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommendation Bot</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="chat-bot">
+                    <div class="chat-message">
+                        <p class="bot-text">Here's the recipe for "{{ recipe_info.title }}":</p>
+                    </div>
+                    <div class="chat-message">
+                        <p class="bot-text">Ingredients:</p>
+                        <ul class="bot-text">
+                            {% for ingredient in recipe_info.extendedIngredients %}
+                            <li>{{ ingredient.original }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="chat-message">
+                        <p class="bot-text">Instructions:</p>
+                        <p class="bot-text">{{ recipe_info.instructions }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

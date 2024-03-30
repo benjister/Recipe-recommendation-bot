@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommendation Bot</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="chat-bot">
+                    <div class="chat-message">
+                        <p class="bot-text">Here are the recipes available in the "{{ category }}" category:</p>
+                    </div>
+                    <form action="/recipe" method="post">
+                        <input type="hidden" name="category" value="{{ category }}">
+                        {% for recipe in recipes %}
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recipe_id" id="{{ recipe.id }}" value="{{ recipe.id }}">
+                            <label class="form-check-label" for="{{ recipe.id }}">{{ recipe.title }}</label>
+                        </div>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-primary btn-block">Select Recipe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

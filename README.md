@@ -1,35 +1,48 @@
-**Recipe Recommendation Chatbot**
+# Recipe Recommendation Bot
 
-Welcome to the Recipe Recommendation Chatbot repository! This Python-based chatbot is designed to provide users with random recipes from various categories such as pasta, soup, salad, dessert, and breakfast. Whether you're looking for a quick weeknight meal or a special dish for a dinner party, our chatbot has you covered.
+## Overview
 
-### Features:
-- Random recipe recommendations from multiple categories.
-- User authentication and preferences storage.
-- Integration with Spoonacular API for recipe data retrieval.
-- ANSI color codes for a visually appealing terminal interface.
+Recipe Recommendation Bot is a Flask web application that helps users discover new recipes across various categories such as pasta, soup, salad, dessert, and breakfast. Users can select a category of their choice and receive a random recipe recommendation along with detailed instructions.
 
-### Getting Started:
-1. Clone the repository to your local machine.
-2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the `main.py` file to start the chatbot.
+## Features
 
-### Usage:
-1. Upon running the chatbot, you'll be prompted to select a category from the available options (pasta, soup, salad, dessert, breakfast).
-2. Once you've selected a category, the chatbot will provide you with a random recipe from that category along with detailed instructions.
-3. You can save your favorite recipes and access them later by logging in with your username and password.
+- Choose from a variety of recipe categories.
+- Get a random recipe recommendation within the selected category.
+- View recipe details and instructions.
 
-### Contributing:
-Contributions are welcome! If you'd like to contribute to the development of the chatbot, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with descriptive commit messages.
-4. Push your changes to your forked repository.
-5. Submit a pull request to the main repository.
+## Installation
 
-### License:
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+1. Clone the repository:
 
-### Contact:
-If you have any questions or suggestions regarding the chatbot, feel free to contact Beniam Ermias Data at databeniam@gmail.com.
+   git clone https://github.com/benjister/Recipe-recommendation-bot.git
+2. Navigate to the project directory:
 
-Thank you for your interest in the Recipe Recommendation Chatbot! Happy cooking! 🍽️👩‍🍳👨‍🍳
+   cd Recipe-recommendation-bot
+
+3. Install dependencies:
+
+
+   pip install -r requirements.txt
+
+4. Run the application:
+
+   python app.py
+5. Open a web browser and go to http://127.0.0.1:5000 to view the  application.
+
+Dependencies
+
+    Flask==2.0.2
+    requests==2.26.0
+    beautifulsoup4==4.10.0
+    (Add any other dependencies specific to your application)
+
+Usage
+
+    Choose a category from the list (pasta, soup, salad, dessert, breakfast).
+    Click on the "Get Recommendation" button.
+    View the recommended recipe along with its instructions.
+
+Screenshots
+
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
